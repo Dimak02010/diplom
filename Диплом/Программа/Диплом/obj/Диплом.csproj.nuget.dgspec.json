@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\John Red\\Desktop\\Диплом\\Программа\\Диплом\\Диплом.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\John Red\\Desktop\\Диплом\\Программа\\Диплом\\Диплом.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\John Red\\Desktop\\Диплом\\Программа\\Диплом\\Диплом.csproj",
+        "projectName": "Диплом",
+        "projectPath": "C:\\Users\\John Red\\Desktop\\Диплом\\Программа\\Диплом\\Диплом.csproj",
+        "packagesPath": "C:\\Users\\John Red\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\John Red\\Desktop\\Диплом\\Программа\\Диплом\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\John Red\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Microsoft.Office.Interop.Excel": {
+              "target": "Package",
+              "version": "[15.0.4795.1000, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.112, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

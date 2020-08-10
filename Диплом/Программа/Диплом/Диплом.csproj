@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE397E1D-8CBC-46F1-B99C-2A747EB0F10D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Диплом</RootNamespace>
+    <AssemblyName>Диплом</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.0.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mail.Designer.cs">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otchet.Designer.cs">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analit.Designer.cs">
+      <DependentUpon>Analit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rabot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rabot.Designer.cs">
+      <DependentUpon>Rabot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rabotadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rabotadd.Designer.cs">
+      <DependentUpon>Rabotadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rabotizm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rabotizm.Designer.cs">
+      <DependentUpon>Rabotizm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sklad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sklad.Designer.cs">
+      <DependentUpon>Sklad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skladadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skladadd.Designer.cs">
+      <DependentUpon>Skladadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skladizm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skladizm.Designer.cs">
+      <DependentUpon>Skladizm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zakaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zakaz.Designer.cs">
+      <DependentUpon>Zakaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zakazadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zakazadd.Designer.cs">
+      <DependentUpon>Zakazadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zakazizm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zakazizm.Designer.cs">
+      <DependentUpon>Zakazizm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mail.resx">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otchet.resx">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analit.resx">
+      <DependentUpon>Analit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rabot.resx">
+      <DependentUpon>Rabot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rabotadd.resx">
+      <DependentUpon>Rabotadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rabotizm.resx">
+      <DependentUpon>Rabotizm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sklad.resx">
+      <DependentUpon>Sklad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skladadd.resx">
+      <DependentUpon>Skladadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skladizm.resx">
+      <DependentUpon>Skladizm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zakaz.resx">
+      <DependentUpon>Zakaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zakazadd.resx">
+      <DependentUpon>Zakazadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zakazizm.resx">
+      <DependentUpon>Zakazizm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Office.Interop.Excel">
+      <Version>15.0.4795.1000</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.Core">
+      <Version>1.0.112</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
